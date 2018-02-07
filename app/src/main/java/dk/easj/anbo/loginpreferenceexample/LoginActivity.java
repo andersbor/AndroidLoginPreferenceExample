@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             intent.putExtra(USERNAME, username);
             startActivity(intent);
         } else {
+            usernameField.setError("Wrong username or password");
             TextView messageView = findViewById(R.id.login_message_textview);
             messageView.setText("Username + password not valid");
         }
